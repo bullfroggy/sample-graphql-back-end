@@ -1,0 +1,5 @@
+CREATE TABLE message (
+     id BIGINT PRIMARY KEY AUTO_INCREMENT,
+     content VARCHAR(255),
+     name VARCHAR(255)
+);

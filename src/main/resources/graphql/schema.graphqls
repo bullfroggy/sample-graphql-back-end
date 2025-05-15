@@ -1,0 +1,22 @@
+type Message {
+    id: ID!
+    content: String!
+    name: String!
+}
+
+type Query {
+    hello: String
+    goodBye: String
+    messages: [Message!]!
+}
+
+type Mutation {
+    sendMessage(content: String!, name: String!): Message!
+    updateMessage(id: ID!, content: String!): Message!
+    deleteMessage(id: ID!): Boolean!
+}
+
+type Subscription {
+    clock: String
+    messageStream: [Message!]!
+}
